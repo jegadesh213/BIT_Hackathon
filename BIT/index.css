@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: rgb(22, 33, 62);
+    background: radial-gradient(circle, rgba(22, 33, 62, 1) 100%, rgba(15, 52, 96, 1) 100%);
+}
+
+/* common */
+.vl {
+    position: absolute;
+    border-left: 2px solid white;
+    margin-left: 23%;
+    height: 1000px;
+}
+
+.v2 {
+    position: absolute;
+    border-left: 2px solid white;
+    margin-left: 48%;
+    height: 1000px;
+}
+
+.v3 {
+    z-index: 1;
+    position: absolute;
+    border-left: 2px solid white;
+    margin-left: 74%;
+    height: 1000px;
+}
+
+.head {
+    background-color: black;
+    height: 100px;
+    width: 2000px;
+}
+
+.tit {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+
+/* bulb */
+#bulb {
+    position: absolute;
+    height: 40%;
+    width: 12%;
+    padding-top: 3%;
+    left: 5%;
+}
+
+#bulb2 {
+    position: absolute;
+    height: 40%;
+    width: 12%;
+    padding-top: 3%;
+    left: 30%;
+}
+
+/* fan */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ceiling-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 2.2%;
+    margin-left: 50.5%;
+    position: absolute;
+    display: inline-block;
+    animation: spin 550ms linear infinite;
+}
+
+.ceiling-container:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
+    background: #444;
+    box-shadow: inset 0 0px 0px 8px #444444, inset 0 1px 5px 22px #383838;
+}
+
+.ceiling-fan {
+    display: block;
+    background: #ccc;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: inset 1px 1px 40px #555;
+}
+
+.ceiling-fan:after {
+    content: "";
+    position: absolute;
+    background: #666;
+    display: block;
+}
+
+.ceiling-fan.horizontal {
+    width: auto;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    transform: skewX(20deg);
+}
+
+.ceiling-fan.horizontal:after {
+    top: 25%;
+    width: 15px;
+    height: 50%;
+}
+
+.ceiling-fan.vertical {
+    width: 50px;
+    height: auto;
+    left: 50%;
+    margin-left: -25px;
+    transform: skewY(20deg);
+}
+
+.ceiling-fan.vertical:after {
+    height: 15px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.ceiling-fan.left {
+    left: 0;
+    right: 50%;
+    margin-right: 45px;
+    border-radius: 50% 15px 15px 50%;
+}
+
+.ceiling-fan.left:after {
+    left: 100%;
+}
+
+.ceiling-fan.right {
+    right: 0;
+    left: 50%;
+    margin-left: 45px;
+    border-radius: 15px 50% 50% 15px;
+}
+
+.ceiling-fan.right:after {
+    right: 100%;
+}
+
+.ceiling-fan.top {
+    top: 0;
+    bottom: 50%;
+    margin-bottom: 45px;
+    border-radius: 50% 50% 15px 15px;
+}
+
+.ceiling-fan.top:after {
+    top: 100%;
+}
+
+.ceiling-fan.bottom {
+    top: 50%;
+    bottom: 0;
+    margin-top: 45px;
+    border-radius: 15px 15px 50% 50%;
+}
+
+.ceiling-fan.bottom:after {
+    bottom: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ceiling-container2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 2.2%;
+    margin-left: 78%;
+    position: absolute;
+    display: inline-block;
+    animation: spin 550ms linear infinite;
+}
+
+.ceiling-container2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
+    background: #444;
+    box-shadow: inset 0 0px 0px 8px #444444, inset 0 1px 5px 22px #383838;
+}
+
+.ceiling-fan {
+    display: block;
+    background: #ccc;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: inset 1px 1px 40px #555;
+}
+
+.ceiling-fan:after {
+    content: "";
+    position: absolute;
+    background: #666;
+    display: block;
+}
+
+.ceiling-fan.horizontal {
+    width: auto;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    transform: skewX(20deg);
+}
+
+.ceiling-fan.horizontal:after {
+    top: 25%;
+    width: 15px;
+    height: 50%;
+}
+
+.ceiling-fan.vertical {
+    width: 50px;
+    height: auto;
+    left: 50%;
+    margin-left: -25px;
+    transform: skewY(20deg);
+}
+
+.ceiling-fan.vertical:after {
+    height: 15px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.ceiling-fan.left {
+    left: 0;
+    right: 50%;
+    margin-right: 45px;
+    border-radius: 50% 15px 15px 50%;
+}
+
+.ceiling-fan.left:after {
+    left: 100%;
+}
+
+.ceiling-fan.right {
+    right: 0;
+    left: 50%;
+    margin-left: 45px;
+    border-radius: 15px 50% 50% 15px;
+}
+
+.ceiling-fan.right:after {
+    right: 100%;
+}
+
+.ceiling-fan.top {
+    top: 0;
+    bottom: 50%;
+    margin-bottom: 45px;
+    border-radius: 50% 50% 15px 15px;
+}
+
+.ceiling-fan.top:after {
+    top: 100%;
+}
+
+.ceiling-fan.bottom {
+    top: 50%;
+    bottom: 0;
+    margin-top: 45px;
+    border-radius: 15px 15px 50% 50%;
+}
+
+.ceiling-fan.bottom:after {
+    bottom: 100%;
+}
+
+/* counter */
+.counter {
+    position: absolute;
+    bottom: 1%;
+    left: 7%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counter1 {
+    position: absolute;
+    bottom: 1%;
+    left: 32%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counter2 {
+    position: absolute;
+    bottom: 1%;
+    left: 57%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counter3 {
+    position: absolute;
+    bottom: 1%;
+    left: 84%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.countere {
+    position: absolute;
+    bottom: 18%;
+    left: 1%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.countere1 {
+    position: absolute;
+    bottom: 18%;
+    left: 25%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.countere2 {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.countere3 {
+    position: absolute;
+    bottom: 18%;
+    left: 76%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counterp {
+    position: absolute;
+    bottom: 18%;
+    left: 13%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counterp1 {
+    position: absolute;
+    bottom: 18%;
+    left: 38%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counterp2 {
+    position: absolute;
+    bottom: 18%;
+    left: 65%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.counterp3 {
+    position: absolute;
+    bottom: 18%;
+    left: 91%;
+    height: 10%;
+    width: 8%;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.ctext {
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 2%;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.powertxt {
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+    color: white;
+}
+
+.energytxt {
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+    color: white;
+}
